@@ -37,7 +37,7 @@
                 {% if name[0] != '.' %}
               </br>
               <a href="{{ url_for("conversation", id=name, now=list_of_names[-1])}}">
-                          {{ name }}
+                          {{ name.split("_", 1)[0] }}
               </a>
                 {%endif%}
                 {%endfor%}

@@ -62,4 +62,4 @@ def file_checker(filename='ahoj', now='none'):
     os.system('./fb2tex -output ' + str(filename) + ' -convo "' + str(filename) + '" -root generated_conversations/' + str(now))
     path = 'out/' + filename + '.html'
 
-    return webbrowser.open_new_tab('http://mylink.com')
+    return webbrowser.open_new_tab('file:////Users/kvasntom/Google%20Drive/computers/programming/go_workspace/src/github.com/nzt4567/print-messenger/' + path)
